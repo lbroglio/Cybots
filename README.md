@@ -3,13 +3,17 @@
 I made Cybots as part of my Com S 437 project. The game is built around the enemy cybots which are behavior based AI each with a uniqe set of behaviors that govern how they move around the map and how they pursue the player.
 
 
+<image src="docs/images/Maze.png" height=300 />
+
+*An image of the maze shortly after the game starts*
+
 ## Gameplay
 
 ### Objective 
-Move through the maze while being hunted by the Cybots and try to reach the end. If you are caught and have too many Cybots near you; you are sent back to the start.
+Move through the maze while being hunted by the Cybots and try to reach the end. If you are caught and have too many Cybots near you; you are sent back to the start. 
 
 ### Cybots (and behaviors):
-*In Spawn order (ex. If only two cybots are set to spawn it will be the first two)*
+*In Spawn order (ex. If only two cybots are set to spawn it will be the first two)* 
 
 **QuarterbackCy** \
 This cybot runs between the four corners of the map. If it sees the Player it will start to chase them until it gets close enough or it loses the player and then resumes moving between the corners. You can tell it is nearby by the sound of his workout music
@@ -23,8 +27,13 @@ This cybot likes to piggyback off the others work. It will stay idle until anoth
 **WandererCy** \
 This cybot is a little bit aimless. It will repeatedly move to random spaces in the maze; stopping to chase the player if it sees them and returning to its wandering afterwards. You can tell if it's wandering nearby you by listening for its footsteps.
 
+
 **HunterCy** \
-This is the oldest and most experienced cybot. It has honed its senses to the point where it always knows where the player is. However its gotten a little bit slow in it old age and can only walk. This cybot walks towards the players current position and starts to chase the player at a walking speed when it sees them. You will know it's gaining on you when you hear it's mechanical laughter.
+This is the oldest and most experienced cybot. It has honed its senses to the point where it always knows where the player is. However its gotten a little bit slow in it old age and can only walk. This cybot walks towards the players current position and starts to chase the player at a walking speed when it sees them. You will know it's gaining on you when you hear it's mechanical laughter. 
+<br/><br/>
+| The HunterCy Cybot | Two Cybots chasing the player |
+| :----------------: | :---------------------------: |
+| ![A blue cybot chasing the player](docs/images/HunterCy.png) | ![Two cybots chasing the player](docs/images/MultipleCybots.png) | 
 
 ### Powerups
 The player can encounter different powerups to help them against the Cybots while exploring the maze
@@ -35,6 +44,9 @@ Walking into a yellow capsule will turn on the directional light and allow the p
 **Invincibility** (Green Capsule) \
 Walking into a green capsule will turn make the player immune to the Cybot's freeze rays for 30 seconds.
 
+<image src="docs/images/PowerUp.png" height=300 />
+
+*One of the game's powerups*
 
 ## Acknowledgments
 - Cybot Models/ Animations - James Lathrope 
